@@ -8,6 +8,8 @@
   body { max-width: 50rem; margin: 0 auto; padding: 1rem; font-family: sans-serif; line-height: 1.5; }
   table { border-collapse: collapse; margin-bottom: 1rem; }
   th, td { border: 1px solid #999; padding: 0.25rem 0.6rem; text-align: left; }
+  details { border: 1px solid #999; padding: 0.4rem 0.6rem; margin-bottom: 0.5rem; }
+  summary { cursor: pointer; }
 </style>
 </head>
 <body>
@@ -24,7 +26,6 @@
 
 <hr>
 
-<!-- ============================================================ -->
 <h2 id="format">Format</h2>
 
 <p>Similar to Streamer Wars / Checkmate. Teams of 5 or 6 players play rapid matches against each other.
@@ -49,46 +50,208 @@ Captains should try to set board order roughly in order of playing strength.</p>
 
 <hr>
 
-<!-- ============================================================ -->
 <h2 id="schedule">Schedule &amp; Results</h2>
-<p>Time &amp Venue: 6:30 pm, LH01</p>
+<p>Time &amp; Venue: 6:30 pm, LH01</p>
+<p>Click a match to see its boards, colors, winner and tiebreak.</p>
+
+<!--
+  HOW TO UPDATE A MATCH (each match is one <details> block):
+  1. In <summary>, replace "not played yet" with the result, e.g. "Kush Knight Riders won 4-2".
+  2. Fill in Winner / Score / Tiebreak inside.
+  3. In the table, replace each - with the player name (keep the color in brackets), and fill in the result (1-0, 0-1, 1/2).
+  Colors alternate: the first-listed team has White on odd boards, Black on even boards. Swap them if the draw says otherwise.
+  Add the word "open" to <details> (i.e. <details open>) to have a match expanded by default.
+-->
 
 <h3>Opening stage</h3>
-<table>
-  <tr><th>Date</th><th>Match</th><th>Result</th></tr>
-  <tr><td>Mon 26 Oct</td><td>Kush Knight Riders vs Queen's Armpit</td><td>-</td></tr>
-  <tr><td>Tue 27 Oct</td><td>Ganges Grandmasters vs King Killers</td><td>-</td></tr>
-  <tr><td>Thu 29 Oct</td><td>Team Priyangshu vs Pawn Pushers</td><td>-</td></tr>
-</table>
+<details>
+  <summary><b>Mon 26 Oct</b>: Queen's Armpit vs Kush Knight Riders &mdash; <i>not played yet</i></summary>
+  <p>Winner: - <br>Score: - &ndash; - <br>Tiebreak (bullet/blitz, top boards): none</p>
+  <table>
+    <tr><th>Board</th><th>Queen's Armpit</th><th></th>Kush Knight Riders<th>Result</th></tr>
+    <tr><td>1</td><td>Progyan (White)</td><td>Kishore (Black)</td><td>-</td></tr>
+    <tr><td>2</td><td>Charls (Black)</td><td>Aditya (White)</td><td>-</td></tr>
+    <tr><td>3</td><td>Aryan (White)</td><td>Kush (Black)</td><td>-</td></tr>
+    <tr><td>4</td><td>Saksham (Black)</td><td>Sania (White)</td><td>-</td></tr>
+    <tr><td>5</td><td>Uday (White)</td><td>Soorya (Black)</td><td>-</td></tr>
+    <tr><td>6</td><td>Kavya (Black)</td><td>Rajrup (White)</td><td>-</td></tr>
+  </table>
+</details>
+
+<details>
+  <summary><b>Tue 27 Oct</b>: Ganges Grandmasters vs King Killers &mdash; <i>not played yet</i></summary>
+  <p>Winner: - <br>Score: - &ndash; - <br>Tiebreak (bullet/blitz, top boards): none</p>
+  <table>
+    <tr><th>Board</th><th>Ganges Grandmasters</th><th>King Killers</th><th>Result</th></tr>
+    <tr><td>1</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>2</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>3</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>4</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>5</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>6</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+  </table>
+</details>
+
+<details>
+  <summary><b>Thu 29 Oct</b>: Team Priyangshu vs Pawn Pushers &mdash; <i>not played yet</i></summary>
+  <p>Winner: - <br>Score: - &ndash; - <br>Tiebreak (bullet/blitz, top boards): none</p>
+  <table>
+    <tr><th>Board</th><th>Team Priyangshu</th><th>Pawn Pushers</th><th>Result</th></tr>
+    <tr><td>1</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>2</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>3</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>4</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>5</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>6</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+  </table>
+</details>
 
 <h3>Winners &amp; Losers tracks</h3>
-<table>
-  <tr><th>Date</th><th>Match</th><th>Result</th></tr>
-  <tr><td>Mon 2 Nov</td><td>L1 vs L2</td><td>-</td></tr>
-  <tr><td>Tue 3 Nov</td><td>W1 vs W2</td><td>-</td></tr>
-  <tr><td>Thu 5 Nov</td><td>L2 vs L3</td><td>-</td></tr>
-  <tr><td>Mon 9 Nov</td><td>W2 vs W3</td><td>-</td></tr>
-  <tr><td>Tue 10 Nov</td><td>L3 vs L1</td><td>-</td></tr>
-  <tr><td>Thu 12 Nov</td><td>W3 vs W1</td><td>-</td></tr>
-</table>
+<details>
+  <summary><b>Mon 2 Nov</b>: L1 vs L2 &mdash; <i>not played yet</i></summary>
+  <p>Winner: - <br>Score: - &ndash; - <br>Tiebreak (bullet/blitz, top boards): none</p>
+  <table>
+    <tr><th>Board</th><th>L1</th><th>L2</th><th>Result</th></tr>
+    <tr><td>1</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>2</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>3</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>4</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>5</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>6</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+  </table>
+</details>
+
+<details>
+  <summary><b>Tue 3 Nov</b>: W1 vs W2 &mdash; <i>not played yet</i></summary>
+  <p>Winner: - <br>Score: - &ndash; - <br>Tiebreak (bullet/blitz, top boards): none</p>
+  <table>
+    <tr><th>Board</th><th>W1</th><th>W2</th><th>Result</th></tr>
+    <tr><td>1</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>2</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>3</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>4</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>5</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>6</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+  </table>
+</details>
+
+<details>
+  <summary><b>Thu 5 Nov</b>: L2 vs L3 &mdash; <i>not played yet</i></summary>
+  <p>Winner: - <br>Score: - &ndash; - <br>Tiebreak (bullet/blitz, top boards): none</p>
+  <table>
+    <tr><th>Board</th><th>L2</th><th>L3</th><th>Result</th></tr>
+    <tr><td>1</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>2</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>3</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>4</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>5</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>6</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+  </table>
+</details>
+
+<details>
+  <summary><b>Mon 9 Nov</b>: W2 vs W3 &mdash; <i>not played yet</i></summary>
+  <p>Winner: - <br>Score: - &ndash; - <br>Tiebreak (bullet/blitz, top boards): none</p>
+  <table>
+    <tr><th>Board</th><th>W2</th><th>W3</th><th>Result</th></tr>
+    <tr><td>1</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>2</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>3</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>4</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>5</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>6</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+  </table>
+</details>
+
+<details>
+  <summary><b>Tue 10 Nov</b>: L3 vs L1 &mdash; <i>not played yet</i></summary>
+  <p>Winner: - <br>Score: - &ndash; - <br>Tiebreak (bullet/blitz, top boards): none</p>
+  <table>
+    <tr><th>Board</th><th>L3</th><th>L1</th><th>Result</th></tr>
+    <tr><td>1</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>2</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>3</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>4</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>5</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>6</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+  </table>
+</details>
+
+<details>
+  <summary><b>Thu 12 Nov</b>: W3 vs W1 &mdash; <i>not played yet</i></summary>
+  <p>Winner: - <br>Score: - &ndash; - <br>Tiebreak (bullet/blitz, top boards): none</p>
+  <table>
+    <tr><th>Board</th><th>W3</th><th>W1</th><th>Result</th></tr>
+    <tr><td>1</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>2</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>3</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>4</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>5</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>6</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+  </table>
+</details>
 
 <h3>Repechage</h3>
-<table>
-  <tr><th>Date</th><th>Match</th><th>Result</th></tr>
-  <tr><td>Mon 16 Nov</td><td>R1 vs R2</td><td>-</td></tr>
-  <tr><td>Tue 17 Nov</td><td>R2 vs R3</td><td>-</td></tr>
-  <tr><td>Thu 19 Nov</td><td>R3 vs R1</td><td>-</td></tr>
-</table>
+<details>
+  <summary><b>Mon 16 Nov</b>: R1 vs R2 &mdash; <i>not played yet</i></summary>
+  <p>Winner: - <br>Score: - &ndash; - <br>Tiebreak (bullet/blitz, top boards): none</p>
+  <table>
+    <tr><th>Board</th><th>R1</th><th>R2</th><th>Result</th></tr>
+    <tr><td>1</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>2</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>3</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>4</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>5</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>6</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+  </table>
+</details>
+
+<details>
+  <summary><b>Tue 17 Nov</b>: R2 vs R3 &mdash; <i>not played yet</i></summary>
+  <p>Winner: - <br>Score: - &ndash; - <br>Tiebreak (bullet/blitz, top boards): none</p>
+  <table>
+    <tr><th>Board</th><th>R2</th><th>R3</th><th>Result</th></tr>
+    <tr><td>1</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>2</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>3</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>4</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>5</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>6</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+  </table>
+</details>
+
+<details>
+  <summary><b>Thu 19 Nov</b>: R3 vs R1 &mdash; <i>not played yet</i></summary>
+  <p>Winner: - <br>Score: - &ndash; - <br>Tiebreak (bullet/blitz, top boards): none</p>
+  <table>
+    <tr><th>Board</th><th>R3</th><th>R1</th><th>Result</th></tr>
+    <tr><td>1</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>2</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>3</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>4</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>5</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>6</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+  </table>
+</details>
 
 <h3>Finals</h3>
-<table>
-  <tr><th>Date</th><th>Match</th><th>Result</th></tr>
-  <tr><td>Sat 21 Nov</td><td>FINALS! Winners track winner vs Repechage winner</td><td>-</td></tr>
-</table>
+<details>
+  <summary><b>Sat 21 Nov</b>: Winners track winner vs Repechage winner &mdash; <i>not played yet</i></summary>
+  <p>Winner: - <br>Score: - &ndash; - <br>Tiebreak (bullet/blitz, top boards): none</p>
+  <table>
+    <tr><th>Board</th><th>Winners track winner</th><th>Repechage winner</th><th>Result</th></tr>
+    <tr><td>1</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>2</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>3</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>4</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+    <tr><td>5</td><td>- (White)</td><td>- (Black)</td><td>-</td></tr>
+    <tr><td>6</td><td>- (Black)</td><td>- (White)</td><td>-</td></tr>
+  </table>
+</details>
+
 
 <hr>
 
-<!-- ============================================================ -->
 <h2 id="standings">Standings</h2>
 
 <h3>Winners track (W1&ndash;W3)</h3>
@@ -117,7 +280,6 @@ Captains should try to set board order roughly in order of playing strength.</p>
 
 <hr>
 
-<!-- ============================================================ -->
 <h2 id="teams">Teams</h2>
 <p>(C) = captain. Numbers are <strong>not in board</strong> order.</p>
 
@@ -182,7 +344,7 @@ Captains should try to set board order roughly in order of playing strength.</p>
 </ol>
 
 <hr>
-<p><small>Last updated: 25 Oct 2026</small></p>
+<p><small>Last updated: 26 Oct 2026</small></p>
 
 </body>
 </html>
